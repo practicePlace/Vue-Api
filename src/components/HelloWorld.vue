@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2>基础用法</h2>
     <ul>
       <li><router-link :to="'/Directive'">指令</router-link></li>
       <li><router-link :to="'/Computed'">计算属性</router-link></li>
@@ -13,7 +13,7 @@
       <li><router-link :to="'/List'">列表渲染</router-link></li>
       <li><router-link :to="'/List'">组件</router-link></li>
     </ul>
-    <h2>Ecosystem</h2>
+    <h2>生态圈</h2>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
