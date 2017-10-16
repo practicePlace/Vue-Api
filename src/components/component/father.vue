@@ -13,7 +13,7 @@
     },
     methods: {
       incrementCounter: function () {
-        this.counter += 1
+        this.counter += 2
         this.$emit('increment')
       }
     },
