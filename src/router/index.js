@@ -16,6 +16,9 @@ import Event from '@/components/event/event'
 import Form from '@/components/form/form'
 //重点： 列表渲染
 import List from '@/components/list/list'
+//重点 组件
+import Component from '@/components/component/component'
+
 Vue.use(Router)
 
 export default new Router({
@@ -64,5 +67,10 @@ export default new Router({
       name: 'List',
       component: List
     },
+    {
+      path:'/Component',
+      name: 'Component',
+      component: Component
+    }
   ]
 })
