@@ -17,7 +17,7 @@
      </p>
      <h3>计算属性的setter</h3>
      <p>setName :{{setName}} </p>
-     <p>all:set可以设置 反依赖的改变</p>
+     <p>all:set可以设置 反依赖的改变    // 必须要手动调用一次setName，set才会被调用；</p>
      <h3>常见问题</h3>
      <p>当包含该计算属性的节点被移除后，get将不再执行</p>
   </div>
@@ -55,7 +55,7 @@
         //setter  反依赖改变；
         set:function(newValue){
           var names = newValue.split(' ')
-          this.firstName = names[0]
+          this.firstName = 123
           this.lastName = names[names.length - 1]
         }
       }
@@ -75,6 +75,7 @@
       }
     },
     mounted(){
+      // 必须要手动调用一次，set才会被调用；
       this.setName = 'John Doe'
       for(let i = 0 ;i<3;i++){
         console.log(this.now)
