@@ -12,6 +12,7 @@
       <br>
       <li><router-link :to="'/List'">列表渲染</router-link></li>
       <li><router-link :to="'/Component'">组件</router-link></li>
+      <li><router-link :to="'/heightComponent'">高级组件用法</router-link></li>
     </ul>
     <h2>生态圈</h2>
     <ul>
