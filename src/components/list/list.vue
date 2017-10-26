@@ -20,9 +20,14 @@
     <h2>2.对象更改检测注意事项（只针对根级别的响应）</h2>
     <p>Vue 不能检测对象属性的添加或删除</p>
     <h2>3.显示过滤/排序结果(将v-for的数据过滤)</h2>
+    <!--用在计算属性是不可行的 method 方法 -->
     <ul>
       <li v-for="n in even(numbers)">{{ n }}</li>
     </ul>
+     <h2>降序排序功能</h2>
+     <ul>
+       <li v-for="n in evenNumbers">{{n}}</li>
+     </ul>
   </div>
 </template>
 <script>
@@ -40,7 +45,12 @@
           lastName: 'Doe',
           age: 30
         },
-        numbers: [ 1, 2, 3, 4, 5 ]
+        numbers: [ 2, 5, 4, 1, 3 ]
+      }
+    },
+    computed: {
+      evenNumbers: function () {
+        return this.numbers.sort()
       }
     },
     methods:{
@@ -48,6 +58,9 @@
           return numbers.filter(function (number) {
             return number % 2 === 0
         })
+      },
+      sortNumber(a,b){
+        return a - b
       }
     },
     mounted(){
@@ -61,6 +74,8 @@
 
       //Vue不能检测对象属性的添加或删除 ,全局可以检测到；
       this.object.add = 'add'
+      //console.log('排序',this.numbers.sort())
+      //注意：sort没什么问题， 但是reserve却又问题。
     }
   }
 </script>

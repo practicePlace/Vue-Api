@@ -40,6 +40,9 @@ import SlotMore from '@/components/component/heightComponent/slot-more'
   //作用域插槽
 import SlotScope from '@/components/component/heightComponent/slot-scope'
 
+//过渡 && 动画
+  // 列表过渡
+import TransitionList from '@/components/animation/transition-list'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -148,6 +151,12 @@ export default new Router({
       path:'/heightComponent/SlotScope',
       name:'SlotScope',
       component: SlotScope
+    },
+    {
+      path:'/TransitionList',
+      name:'TransitionList',
+      component: TransitionList
     }
+
   ]
 })
