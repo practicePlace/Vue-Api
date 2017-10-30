@@ -14,6 +14,7 @@
       <li><router-link :to="'/Component'">组件</router-link></li>
       <li><router-link :to="'/heightComponent'">高级组件用法</router-link></li>
       <li><router-link :to="'/TransitionList'">过渡  动画</router-link></li>
+      <li><router-link :to="'/Prototype'">深入响应式原理</router-link></li>
     </ul>
     <h2>生态圈</h2>
     <ul>

@@ -41,6 +41,9 @@ import SlotScope from '@/components/component/heightComponent/slot-scope'
 //过渡 && 动画
   // 列表过渡
 import TransitionList from '@/components/animation/transition-list'
+// 深入响应式原理
+import Prototype from '@/components/prototype/prototype'
+
 
 export default [
   {
@@ -153,5 +156,10 @@ export default [
     path:'/TransitionList',
     name:'TransitionList',
     component: TransitionList
+  },
+  {
+    path:'/Prototype',
+    name:'Prototype',
+    component: Prototype
   }
 ]
