@@ -16,6 +16,11 @@
       <li><router-link :to="'/TransitionList'">过渡  动画</router-link></li>
       <li><router-link :to="'/Prototype'">深入响应式原理</router-link></li>
     </ul>
+    <h2>常见的几种应用场景</h2>
+    <ul>
+      <li><router-link :to="'/Directive'">异步执行Dom更新</router-link></li>
+
+    </ul>
     <h2>生态圈</h2>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>

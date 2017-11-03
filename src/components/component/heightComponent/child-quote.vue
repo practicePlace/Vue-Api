@@ -1,6 +1,7 @@
 <template>
   <div id="parent">
     <ggg  ref="profile"></ggg>
+    <div ref="dom"> 节点引用</div>
   </div>
 </template>
 
@@ -19,7 +20,10 @@
     mounted(){
       // 访问子组件实例
       var child = this.$refs.profile
-      console.log(child)
+      console.log('组件引用,指向该实例', child)
+      var dom =this.$refs.dom
+      console.log('指向该节点', dom)
+      console.log('$refs的注册集合对象', this.$refs)
     }
   }
 </script>
