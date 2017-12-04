@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div>参考文档：http://www.jb51.net/article/115624.htm</div>
     <button @click="incrementCounter">{{ counter }}</button>
   </div>
 </template>

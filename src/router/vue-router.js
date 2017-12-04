@@ -4,6 +4,7 @@ import Directive from '@/components/Directive/directive'
 import Vmodel from '@/components/Directive/v-module'
 //计算属性
 import Computed from '@/components/computed/computed'
+import ComputedTest from '@/components/computed/test'
 //观察属性
 import Watch from '@/components/computed/watch'
 //Class与Style的绑定
@@ -59,6 +60,11 @@ export default [
       path: 'Vmodel',
       component: Vmodel
     }]
+  },
+  {
+    path:'/Computed/test',
+    name:'ComputedTest',
+    component: ComputedTest
   },
   {
     path:'/Computed',
