@@ -44,6 +44,8 @@ import SlotScope from '@/components/component/heightComponent/slot-scope'
 import TransitionList from '@/components/animation/transition-list'
 // 深入响应式原理
 import Prototype from '@/components/prototype/prototype'
+// 极客时间的学习演练
+import Jike from '@/components/jike/jike'
 
 
 export default [
@@ -167,5 +169,10 @@ export default [
     path:'/Prototype',
     name:'Prototype',
     component: Prototype
+  },
+  {
+    path:'/jike',
+    name:'Jike',
+    component: Jike
   }
 ]

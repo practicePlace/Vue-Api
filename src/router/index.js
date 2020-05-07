@@ -5,6 +5,6 @@ import VueRouter from './vue-router'
 Vue.use(Router)
 export default new Router({
   routes: [
-    ...VueRouter //拓展运算符
+    ...VueRouter //扩展运算符
   ]
 })
