@@ -15,13 +15,13 @@
       <li><router-link :to="'/heightComponent'">高级组件用法</router-link></li>
       <li><router-link :to="'/TransitionList'">过渡  动画</router-link></li>
       <li><router-link :to="'/Prototype'">深入响应式原理</router-link></li>
+      <li><router-link :to="'/Mixin'">混合混入</router-link></li>
     </ul>
     <h2>学习</h2>
     <li><router-link :to="'/jike'">极客时间-Vue的讲解</router-link></li>
     <h2>常见的几种应用场景</h2>
     <ul>
       <li><router-link :to="'/Directive'">异步执行Dom更新</router-link></li>
-
     </ul>
     <h2>生态圈</h2>
     <ul>

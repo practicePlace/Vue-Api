@@ -38,6 +38,8 @@ import Slot from '@/components/component/heightComponent/slot'
 import SlotMore from '@/components/component/heightComponent/slot-more'
   //作用域插槽
 import SlotScope from '@/components/component/heightComponent/slot-scope'
+// 混合混入
+import Mixin from '@/components/view/mixin'
 
 //过渡 && 动画
   // 列表过渡
@@ -174,5 +176,10 @@ export default [
     path:'/jike',
     name:'Jike',
     component: Jike
+  },
+  {
+    path:'/Mixin',
+    name:'Mixin',
+    component: Mixin
   }
 ]
