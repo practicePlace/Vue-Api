@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    
+    <!-- 基础用法 -->
     <h2>基础用法</h2>
     <ul>
       <li><router-link :to="'/Directive'">指令</router-link></li>
@@ -17,6 +19,13 @@
       <li><router-link :to="'/Prototype'">深入响应式原理</router-link></li>
       <li><router-link :to="'/Mixin'">混合混入</router-link></li>
     </ul>
+
+    <!-- 高级用法 -->
+    <h2>高级用法</h2>
+    <ul>
+    </ul>
+
+
     <h2>学习</h2>
     <li><router-link :to="'/jike'">极客时间-Vue的讲解</router-link></li>
     <h2>常见的几种应用场景</h2>
