@@ -22,6 +22,7 @@
 
     <!-- 高级用法 -->
     <h2>高级用法</h2>
+      <li><router-link :to="'/listeners'">listeners</router-link></li>
     <ul>
     </ul>
 

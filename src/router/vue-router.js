@@ -49,6 +49,8 @@ import Prototype from '@/components/prototype/prototype'
 // 极客时间的学习演练
 import Jike from '@/components/jike/jike'
 
+import listeners from '@/components/listeners/listeners'
+
 
 export default [
   {
@@ -181,5 +183,10 @@ export default [
     path:'/Mixin',
     name:'Mixin',
     component: Mixin
+  },
+  {
+    path: '/listeners',
+    name: 'listeners',
+    component: listeners
   }
 ]
